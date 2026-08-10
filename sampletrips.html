@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample Trips — Travel Your Way</title>
+<meta name="description" content="See a worked example of what a Travel Your Way itinerary, Effort Score, and rain-day Plan B actually look like.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">TY</span>
+      <span class="brand-name">Travel Your Way</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="plan.html" data-i18n="nav.plan">Plan My Trip</a></li>
+      <li><a href="destinations.html" data-i18n="nav.destinations">Destinations</a></li>
+      <li><a href="sample-trips.html" data-i18n="nav.sample">Sample Trips</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-current" id="langCurrent"><span id="langCurrentLabel">🇬🇧 EN</span> ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <button data-lang="en">🇬🇧 English</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="es">🇪🇸 Español</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <span class="eyebrow">Sample trips</span>
+      <h1>A worked example, before you fill in a single field</h1>
+      <p style="max-width:600px;">This is a real output from the planner — a relaxed 5-day Japan trip. Try the toggle below.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap results-layout">
+      <div>
+        <div class="planb-banner">
+          <span class="glyph">🌧️</span>
+          <div>
+            <h4>Every day has a Plan B</h4>
+            <p>Tap the toggle on Day 1 to see the rain-day alternative swap in.</p>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-card-head">
+            <div class="day-title">
+              <span class="day-num">DAY 1</span>
+              <h3>Shibuya &amp; Harajuku</h3>
+            </div>
+            <div class="plan-toggle">
+              <button type="button" id="sampleNormalBtn" class="active normal">☀ Normal Plan</button>
+              <button type="button" id="sampleRainBtn">🌧 Rain Plan</button>
+            </div>
+          </div>
+          <div class="day-card-body" id="sampleDayBody">
+            <ul class="stop-list" id="sampleStopList">
+              <li>Shibuya Crossing</li>
+              <li>Harajuku's Takeshita Street</li>
+              <li>Meiji Shrine</li>
+            </ul>
+            <div class="day-facts">
+              <div>Walking: <b id="sampleWalking">Moderate</b></div>
+              <div>Est. spending: <b id="sampleSpending">¥10,000</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-card">
+          <div class="day-card-head">
+            <div class="day-title">
+              <span class="day-num">DAY 2</span>
+              <h3>Hakone — Lake Ashi &amp; Onsen</h3>
+            </div>
+          </div>
+          <div class="day-card-body">
+            <ul class="stop-list">
+              <li>Lake Ashi cruise</li>
+              <li>Hakone Shrine</li>
+              <li>Onsen soak with Mt. Fuji views</li>
+            </ul>
+            <div class="day-facts">
+              <div>Travel time: <b>~2 hrs</b></div>
+              <div>Walking: <b>Low</b></div>
+              <div>Est. spending: <b>¥12,000</b></div>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size:0.9rem; color:var(--ink-faint);">…and 3 more days (Kyoto, Arashiyama, Osaka) generated the same way.</p>
+
+        <div class="center-cta" style="margin-top:20px;">
+          <a href="plan.html?destination=Japan" class="btn btn-primary">Build this trip for real</a>
+        </div>
+      </div>
+
+      <aside>
+        <div class="effort-ticket">
+          <div class="stub-top">
+            <div class="stub-eyebrow"><span>Travel Effort</span><span>TYW-05</span></div>
+            <div class="effort-score-row">
+              <span class="score">3</span>
+              <span class="of10">/ 10</span>
+            </div>
+            <span class="effort-label relaxed">Relaxed</span>
+          </div>
+          <div class="ticket-perf"></div>
+          <div class="stub-bottom">
+            <div class="effort-rows">
+              <div class="effort-row"><span class="name">Walking</span><span class="stars">★★<span class="off">★★★</span></span></div>
+              <div class="effort-row"><span class="name">Transportation</span><span class="stars">★★<span class="off">★★★</span></span></div>
+              <div class="effort-row"><span class="name">Early mornings</span><span class="stars">★<span class="off">★★★★</span></span></div>
+              <div class="effort-row"><span class="name">Transfers</span><span class="stars">★★<span class="off">★★★</span></span></div>
+            </div>
+            <p class="ticket-note">This is what "Make My Trip Easier" adjusts — try it live on your own results page.</p>
+          </div>
+        </div>
+        <div class="aside-card" style="background:var(--paper-raised); color:var(--ink); border:1px solid var(--line); padding:24px;">
+          <h4 style="color:var(--ink);">Want to see another one?</h4>
+          <p style="font-size:0.9rem; margin-bottom:14px;">Or build a fresh trip with your own answers.</p>
+          <a href="plan.html?destination=Italy" class="btn btn-ghost-teal btn-block" style="margin-bottom:10px;">Sample: Italy, art &amp; food</a>
+          <a href="plan.html" class="btn btn-secondary btn-block">Plan my own trip</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark">TY</span>
+          <span class="brand-name" style="color:#fff;">Travel Your Way</span>
+        </a>
+        <p style="color:#a8b4bd; font-size:0.9rem; max-width:280px;" data-i18n="footer.tagline">Trips planned around how you actually like to travel.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.explore">Explore</h4>
+        <ul>
+          <li><a href="plan.html">Plan My Trip</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="sample-trips.html">Sample Trips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.company">Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.legal">Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span class="footer-year">2026</span> Travel Your Way. A concept project.</span>
+      <span>No bookings or payments yet — planning only.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('sampleRainBtn').addEventListener('click', () => {
+    document.getElementById('sampleNormalBtn').classList.remove('active', 'normal');
+    document.getElementById('sampleRainBtn').classList.add('active', 'rain');
+    document.getElementById('sampleDayBody').classList.add('rain-mode');
+    document.getElementById('sampleStopList').innerHTML =
+      '<li>teamLab digital art museum</li><li>Shibuya Scramble Square observation deck</li><li>covered shopping arcades</li>';
+    document.getElementById('sampleWalking').textContent = 'Low';
+    document.getElementById('sampleSpending').textContent = '¥9,000';
+  });
+  document.getElementById('sampleNormalBtn').addEventListener('click', () => {
+    document.getElementById('sampleRainBtn').classList.remove('active', 'rain');
+    document.getElementById('sampleNormalBtn').classList.add('active', 'normal');
+    document.getElementById('sampleDayBody').classList.remove('rain-mode');
+    document.getElementById('sampleStopList').innerHTML =
+      '<li>Shibuya Crossing</li><li>Harajuku\'s Takeshita Street</li><li>Meiji Shrine</li>';
+    document.getElementById('sampleWalking').textContent = 'Moderate';
+    document.getElementById('sampleSpending').textContent = '¥10,000';
+  });
+</script>
+</body>
+</html>

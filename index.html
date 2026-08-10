@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Your Way — Trips built around how you travel</title>
+<meta name="description" content="Tell us your pace, budget, and interests. We'll build a trip around you — with an honest Effort Meter and a rain-day Plan B for every itinerary.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">TY</span>
+      <span class="brand-name">Travel Your Way</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="plan.html" data-i18n="nav.plan">Plan My Trip</a></li>
+      <li><a href="destinations.html" data-i18n="nav.destinations">Destinations</a></li>
+      <li><a href="sample-trips.html" data-i18n="nav.sample">Sample Trips</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-current" id="langCurrent"><span id="langCurrentLabel">🇬🇧 EN</span> ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <button data-lang="en">🇬🇧 English</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="es">🇪🇸 Español</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <span class="eyebrow" data-i18n="hero.eyebrow">A travel agency built around you</span>
+      <h1 data-i18n="hero.title">Your trip. Your pace. Your way.</h1>
+      <p class="lede" data-i18n="hero.lede">Tell us how you want to travel and we'll help create a trip around you.</p>
+      <div class="hero-cta-row">
+        <a href="plan.html" class="btn btn-primary" data-i18n="hero.cta">Plan My Trip</a>
+        <span class="hero-note" data-i18n="hero.note">No account needed · takes about 2 minutes</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="why.eyebrow">Why travel with us</span>
+        <h2 data-i18n="why.title">We plan around how you travel, not just where</h2>
+      </div>
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="icon-tag">01</div>
+          <h3 data-i18n="why.pace.title">Your Pace</h3>
+          <p data-i18n="why.pace.body">Choose relaxed, balanced, or adventure — every itinerary is paced to match, not the other way around.</p>
+        </div>
+        <div class="value-card">
+          <div class="icon-tag">02</div>
+          <h3 data-i18n="why.budget.title">Your Budget</h3>
+          <p data-i18n="why.budget.body">We build the trip around what you're comfortable spending, and show you exactly where the money goes.</p>
+        </div>
+        <div class="value-card">
+          <div class="icon-tag">03</div>
+          <h3 data-i18n="why.backup.title">Your Backup Plan</h3>
+          <p data-i18n="why.backup.body">Every day comes with a Plan B, so weather or a closed attraction never derails your trip.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--paper-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Three questions, one itinerary that actually fits</h2>
+      </div>
+      <div class="value-grid">
+        <div class="value-card" style="background:var(--paper);">
+          <div class="icon-tag" style="background:var(--brass-tint); color:#7a5a1f;">1</div>
+          <h3>Tell us how you travel</h3>
+          <p>Destination, days, budget, interests, pace, and how much walking you're up for.</p>
+        </div>
+        <div class="value-card" style="background:var(--paper);">
+          <div class="icon-tag" style="background:var(--brass-tint); color:#7a5a1f;">2</div>
+          <h3>We build the itinerary</h3>
+          <p>A day-by-day plan with an honest Effort Score, so you know what you're signing up for.</p>
+        </div>
+        <div class="value-card" style="background:var(--paper);">
+          <div class="icon-tag" style="background:var(--brass-tint); color:#7a5a1f;">3</div>
+          <h3>Adjust until it's right</h3>
+          <p>Too much? Tap "Make My Trip Easier." Rain forecast? Every day already has a Plan B.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Popular starting points</span>
+        <h2>A few places travelers plan often</h2>
+      </div>
+      <div class="card-grid">
+        <a href="plan.html?destination=Japan" class="dest-card">
+          <div class="photo" style="background:linear-gradient(135deg,#1f6f65,#123f39);">
+            <span class="tag">Best for: food, history</span>
+          </div>
+          <div class="body">
+            <h3>Japan</h3>
+            <p class="meta">Tokyo · Kyoto · Hakone · Osaka</p>
+          </div>
+        </a>
+        <a href="plan.html?destination=Italy" class="dest-card">
+          <div class="photo" style="background:linear-gradient(135deg,#b8863b,#6f4f1e);">
+            <span class="tag">Best for: art, food</span>
+          </div>
+          <div class="body">
+            <h3>Philippines</h3>
+            <p class="meta">Palawan · Boracay · Cebu · </p>
+          </div>
+        </a>
+        <a href="plan.html" class="dest-card">
+          <div class="photo" style="background:linear-gradient(135deg,#3b6fa0,#16344c);">
+            <span class="tag">Anywhere else</span>
+          </div>
+          <div class="body">
+            <h3>Somewhere not listed?</h3>
+            <p class="meta">Type any destination — we'll still plan around your style</p>
+          </div>
+        </a>
+      </div>
+      <div class="center-cta" style="margin-top:36px;">
+        <a href="destinations.html" class="btn btn-secondary">See all destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--teal-dark); color:#eaf3f1;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#8fd6c9;">What travelers say</span>
+        <h2 style="color:#fff;">Real feedback from the concept's early testers</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card" style="background:#123f39; border-color:#1e5850;">
+          <p class="quote" style="color:#fff;">"The Effort Meter alone would've saved our last trip. We didn't realize how much walking we'd signed up for until it was too late."</p>
+          <p class="person" style="color:#8fd6c9;">— Maya R., tested the Kyoto sample trip</p>
+        </div>
+        <div class="testimonial-card" style="background:#123f39; border-color:#1e5850;">
+          <p class="quote" style="color:#fff;">"Loved that every day already had a rain plan. Didn't have to think about it when it actually rained in Hakone."</p>
+          <p class="person" style="color:#8fd6c9;">— Daniel O., tested the Japan sample trip</p>
+        </div>
+        <div class="testimonial-card" style="background:#123f39; border-color:#1e5850;">
+          <p class="quote" style="color:#fff;">"Tapped 'Make My Trip Easier' halfway through planning and it actually made sense — fewer transfers, not just fewer stops."</p>
+          <p class="person" style="color:#8fd6c9;">— Priya K., tested the Italy sample trip</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap center-cta">
+      <h2>Ready to see your trip?</h2>
+      <p style="max-width:480px; margin:0 auto 28px;">It takes about two minutes, and there's nothing to book yet — just your itinerary, your effort score, and your Plan B.</p>
+      <a href="plan.html" class="btn btn-primary" data-i18n="btn.planTrip">Plan My Trip</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark">TY</span>
+          <span class="brand-name" style="color:#fff;">Travel Your Way</span>
+        </a>
+        <p style="color:#a8b4bd; font-size:0.9rem; max-width:280px;" data-i18n="footer.tagline">Trips planned around how you actually like to travel.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.explore">Explore</h4>
+        <ul>
+          <li><a href="plan.html">Plan My Trip</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="sample-trips.html">Sample Trips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.company">Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.legal">Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span class="footer-year">2026</span> Travel Your Way. A concept project.</span>
+      <span>No bookings or payments yet — planning only.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
